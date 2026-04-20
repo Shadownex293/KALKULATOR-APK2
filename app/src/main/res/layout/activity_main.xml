@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D0D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="48dp"
+        android:background="#111111">
+
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#FF3333"
+            android:gravity="end"
+            android:fontFamily="monospace"
+            android:alpha="0.7"
+            android:singleLine="true"
+            android:ellipsize="start" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="64sp"
+            android:textColor="#FFFFFF"
+            android:gravity="end"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="24sp"
+            android:autoSizeMaxTextSize="64sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF2200" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#0D0D0D">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btnClear" style="@style/BtnFunc" android:text="AC" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnPlusMinus" style="@style/BtnFunc" android:text="+/-" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnPercent" style="@style/BtnFunc" android:text="%" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnDiv" style="@style/BtnOp" android:text="&#247;"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btn7" style="@style/BtnNum" android:text="7" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn8" style="@style/BtnNum" android:text="8" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn9" style="@style/BtnNum" android:text="9" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnMul" style="@style/BtnOp" android:text="&#215;"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btn4" style="@style/BtnNum" android:text="4" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn5" style="@style/BtnNum" android:text="5" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn6" style="@style/BtnNum" android:text="6" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnSub" style="@style/BtnOp" android:text="&#8722;"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btn1" style="@style/BtnNum" android:text="1" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn2" style="@style/BtnNum" android:text="2" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btn3" style="@style/BtnNum" android:text="3" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnAdd" style="@style/BtnOp" android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal">
+            <Button android:id="@+id/btn0" style="@style/BtnNum" android:text="0" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnDot" style="@style/BtnNum" android:text="." android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnBackspace" style="@style/BtnNum" android:text="&#9003;" android:layout_marginRight="10dp"/>
+            <Button android:id="@+id/btnEquals" style="@style/BtnEquals" android:text="="/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
